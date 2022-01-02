@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "catpi_v2_worker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "local"
+      }
+    }
+  }
+}

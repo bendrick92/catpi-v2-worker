@@ -1,0 +1,13 @@
+[Unit]
+Description=catPi V2 Worker Service
+
+[Service]
+WorkingDirectory=/home/pi/catpi-v2-worker
+ExecStart=/usr/local/bin/dotnet /home/pi/catpi-v2-worker/catpi-v2-worker.dll
+SyslogIdentifier=catpi-v2-worker
+User=pi
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
